@@ -52,7 +52,7 @@ const resolvers = {
     },
     removeBook: async (parent, { bookId }, {user}) => {
         if (user) {
-          const updatedUser = await Thought.findOneAndUpdate(
+          const updatedUser = await User.findOneAndUpdate(
             { _id: user._id },
             { $pull: { savedBooks: { bookId: bookId } } },
             { new: true, runValidators: true }
