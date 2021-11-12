@@ -12,6 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://github.com/lverghese/lvbooksearch-engine",
   "devDependencies": {
     "concurrently": "^5.1.0"
   }
