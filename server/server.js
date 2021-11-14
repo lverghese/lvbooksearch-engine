@@ -8,13 +8,14 @@ const path = require('path');
 const { TypeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
+const typeDefs = TypeDefs
 const PORT = process.env.PORT || 3001;
 const app = express();
 
 const startServer = async () => {
   // create a new Apollo server and pass in our schema data
   const server = new ApolloServer({
-    TypeDefs,
+    typeDefs,
     resolvers,
     context: authMiddleware
   });
