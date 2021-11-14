@@ -1,8 +1,8 @@
 // import the gql tagged template function
 const { gql } = require('apollo-server-express');
 
-// create our typeDefs
-const typeDefs = gql`
+// create our TypeDefs
+const TypeDefs = gql`
     type Book {
         bookId: String
         authors: [String]
@@ -43,5 +43,5 @@ const typeDefs = gql`
 
 
 
-// export the typeDefs
-module.exports = typeDefs; 
+// export the TypeDefs
+module.exports = TypeDefs; 
